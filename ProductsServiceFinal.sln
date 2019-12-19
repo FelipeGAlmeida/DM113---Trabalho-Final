@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cliente2", "Cliente2\Client
 		{C71072DF-0E13-4549-AB02-F7DE3218D630} = {C71072DF-0E13-4549-AB02-F7DE3218D630}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstoqueServiceLibrary", "EstoqueServiceLibrary\EstoqueServiceLibrary.csproj", "{3CA7B20F-AFA2-4570-85BA-D7DFD28E7BC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{789D9292-F968-47DA-AD7A-F1774BE9F473}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{789D9292-F968-47DA-AD7A-F1774BE9F473}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{789D9292-F968-47DA-AD7A-F1774BE9F473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CA7B20F-AFA2-4570-85BA-D7DFD28E7BC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA7B20F-AFA2-4570-85BA-D7DFD28E7BC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CA7B20F-AFA2-4570-85BA-D7DFD28E7BC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CA7B20F-AFA2-4570-85BA-D7DFD28E7BC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

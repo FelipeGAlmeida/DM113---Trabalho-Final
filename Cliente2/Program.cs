@@ -12,7 +12,7 @@ namespace Cliente2 {
 
             // Create a proxy object and connect to the service
             EstoqueServiceClient proxy = new EstoqueServiceClient();
-
+                
             // Test the operations in the service
             Console.WriteLine("Cliente 2");
             Console.WriteLine();
