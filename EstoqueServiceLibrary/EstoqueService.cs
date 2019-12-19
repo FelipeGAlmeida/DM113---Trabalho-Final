@@ -12,7 +12,7 @@ namespace ServicoEstoque {
     // OBSERVAÇÃO: Para iniciar o cliente de teste do WCF para testar esse serviço, selecione Service1.svc ou Service1.svc.cs no Gerenciador de Soluções e inicie a depuração.
 
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    public class EstoqueService : IEstoqueService {
+    public class EstoqueService : IEstoqueService, IEstoqueServiceV2 {
 
         public List<string> ListarProdutos() {
             // Create a list of products names

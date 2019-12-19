@@ -95,50 +95,50 @@ namespace Cliente1.ServicoEstoque
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="Cliente1.ServicoEstoque.IEstoqueService")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="http://localhost/estoqueService/01", ConfigurationName="Cliente1.ServicoEstoque.IEstoqueService")]
     public interface IEstoqueService
     {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/ListarProdutos", ReplyAction="http://tempuri.org/IEstoqueService/ListarProdutosResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://localhost/estoqueService/01/IEstoqueService/ListarProdutos", ReplyAction="http://localhost/estoqueService/01/IEstoqueService/ListarProdutosResponse")]
         string[] ListarProdutos();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/ListarProdutos", ReplyAction="http://tempuri.org/IEstoqueService/ListarProdutosResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://localhost/estoqueService/01/IEstoqueService/ListarProdutos", ReplyAction="http://localhost/estoqueService/01/IEstoqueService/ListarProdutosResponse")]
         System.Threading.Tasks.Task<string[]> ListarProdutosAsync();
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/IncluirProduto", ReplyAction="http://tempuri.org/IEstoqueService/IncluirProdutoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://localhost/estoqueService/01/IEstoqueService/IncluirProduto", ReplyAction="http://localhost/estoqueService/01/IEstoqueService/IncluirProdutoResponse")]
         bool IncluirProduto(Cliente1.ServicoEstoque.Produto Produto);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/IncluirProduto", ReplyAction="http://tempuri.org/IEstoqueService/IncluirProdutoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://localhost/estoqueService/01/IEstoqueService/IncluirProduto", ReplyAction="http://localhost/estoqueService/01/IEstoqueService/IncluirProdutoResponse")]
         System.Threading.Tasks.Task<bool> IncluirProdutoAsync(Cliente1.ServicoEstoque.Produto Produto);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/RemoverProduto", ReplyAction="http://tempuri.org/IEstoqueService/RemoverProdutoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://localhost/estoqueService/01/IEstoqueService/RemoverProduto", ReplyAction="http://localhost/estoqueService/01/IEstoqueService/RemoverProdutoResponse")]
         bool RemoverProduto(string NumeroProduto);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/RemoverProduto", ReplyAction="http://tempuri.org/IEstoqueService/RemoverProdutoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://localhost/estoqueService/01/IEstoqueService/RemoverProduto", ReplyAction="http://localhost/estoqueService/01/IEstoqueService/RemoverProdutoResponse")]
         System.Threading.Tasks.Task<bool> RemoverProdutoAsync(string NumeroProduto);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/ConsultarEstoque", ReplyAction="http://tempuri.org/IEstoqueService/ConsultarEstoqueResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://localhost/estoqueService/01/IEstoqueService/ConsultarEstoque", ReplyAction="http://localhost/estoqueService/01/IEstoqueService/ConsultarEstoqueResponse")]
         int ConsultarEstoque(string NumeroProduto);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/ConsultarEstoque", ReplyAction="http://tempuri.org/IEstoqueService/ConsultarEstoqueResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://localhost/estoqueService/01/IEstoqueService/ConsultarEstoque", ReplyAction="http://localhost/estoqueService/01/IEstoqueService/ConsultarEstoqueResponse")]
         System.Threading.Tasks.Task<int> ConsultarEstoqueAsync(string NumeroProduto);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/AdicionarEstoque", ReplyAction="http://tempuri.org/IEstoqueService/AdicionarEstoqueResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://localhost/estoqueService/01/IEstoqueService/AdicionarEstoque", ReplyAction="http://localhost/estoqueService/01/IEstoqueService/AdicionarEstoqueResponse")]
         bool AdicionarEstoque(string NumeroProduto, int Quantidade);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/AdicionarEstoque", ReplyAction="http://tempuri.org/IEstoqueService/AdicionarEstoqueResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://localhost/estoqueService/01/IEstoqueService/AdicionarEstoque", ReplyAction="http://localhost/estoqueService/01/IEstoqueService/AdicionarEstoqueResponse")]
         System.Threading.Tasks.Task<bool> AdicionarEstoqueAsync(string NumeroProduto, int Quantidade);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/RemoverEstoque", ReplyAction="http://tempuri.org/IEstoqueService/RemoverEstoqueResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://localhost/estoqueService/01/IEstoqueService/RemoverEstoque", ReplyAction="http://localhost/estoqueService/01/IEstoqueService/RemoverEstoqueResponse")]
         bool RemoverEstoque(string NumeroProduto, int Quantidade);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/RemoverEstoque", ReplyAction="http://tempuri.org/IEstoqueService/RemoverEstoqueResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://localhost/estoqueService/01/IEstoqueService/RemoverEstoque", ReplyAction="http://localhost/estoqueService/01/IEstoqueService/RemoverEstoqueResponse")]
         System.Threading.Tasks.Task<bool> RemoverEstoqueAsync(string NumeroProduto, int Quantidade);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/VerProduto", ReplyAction="http://tempuri.org/IEstoqueService/VerProdutoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://localhost/estoqueService/01/IEstoqueService/VerProduto", ReplyAction="http://localhost/estoqueService/01/IEstoqueService/VerProdutoResponse")]
         Cliente1.ServicoEstoque.Produto VerProduto(string NumeroProduto);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/VerProduto", ReplyAction="http://tempuri.org/IEstoqueService/VerProdutoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="http://localhost/estoqueService/01/IEstoqueService/VerProduto", ReplyAction="http://localhost/estoqueService/01/IEstoqueService/VerProdutoResponse")]
         System.Threading.Tasks.Task<Cliente1.ServicoEstoque.Produto> VerProdutoAsync(string NumeroProduto);
     }
     

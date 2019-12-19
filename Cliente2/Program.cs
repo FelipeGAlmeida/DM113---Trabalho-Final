@@ -15,7 +15,7 @@ namespace Cliente2 {
             Console.ReadLine();
 
             // Create a proxy object and connect to the service
-            EstoqueServiceClient proxy = new EstoqueServiceClient("BasicHttpBinding_IServicoEstoque");
+            EstoqueServiceV2Client proxy = new EstoqueServiceV2Client("WS2007HttpBinding_IServicoEstoque");
                 
             // Test the operations in the service
             Console.WriteLine("Cliente 2");
