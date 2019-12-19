@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ServiceModel;
-using Cliente2.EstoqueService;
+using Cliente2.ServicoEstoque;
 
 
 namespace Cliente2 {
