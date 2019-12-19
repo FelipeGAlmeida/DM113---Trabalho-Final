@@ -4,14 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ServiceModel;
-using Cliente1.EstoqueService;
+using Cliente1.ServicoEstoque;
+
 
 namespace Cliente1 {
     class Program {
         static void Main(string[] args) {
 
+            Console.WriteLine("Press ENTER when the service has started");
+            Console.ReadLine();
+
             // Create a proxy object and connect to the service
-            EstoqueServiceClient proxy = new EstoqueServiceClient();
+            EstoqueServiceClient proxy = new EstoqueServiceClient("BasicHttpBinding_IServicoEstoque");
 
             // Test the operations in the service
             Console.WriteLine("Cliente 1");

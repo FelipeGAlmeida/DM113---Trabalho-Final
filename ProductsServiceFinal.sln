@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cliente2", "Cliente2\Client
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstoqueServiceLibrary", "EstoqueServiceLibrary\EstoqueServiceLibrary.csproj", "{3CA7B20F-AFA2-4570-85BA-D7DFD28E7BC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstoqueServiceHost", "EstoqueServiceHost\EstoqueServiceHost.csproj", "{D5A4548D-A8FC-48FE-B2FF-3534001F170C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvedorEstoqueHost", "EstoqueServiceHost\ProvedorEstoqueHost.csproj", "{D5A4548D-A8FC-48FE-B2FF-3534001F170C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

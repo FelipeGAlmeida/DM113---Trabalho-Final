@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Cliente1.EstoqueService {
+namespace Cliente1.ServicoEstoque {
     using System.Runtime.Serialization;
     using System;
     
@@ -107,7 +107,7 @@ namespace Cliente1.EstoqueService {
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="EstoqueService.IEstoqueService")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServicoEstoque.IEstoqueService")]
     public interface IEstoqueService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/ListarProdutos", ReplyAction="http://tempuri.org/IEstoqueService/ListarProdutosResponse")]
@@ -117,10 +117,10 @@ namespace Cliente1.EstoqueService {
         System.Threading.Tasks.Task<string[]> ListarProdutosAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/IncluirProduto", ReplyAction="http://tempuri.org/IEstoqueService/IncluirProdutoResponse")]
-        bool IncluirProduto(Cliente1.EstoqueService.Produto Produto);
+        bool IncluirProduto(Cliente1.ServicoEstoque.Produto Produto);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/IncluirProduto", ReplyAction="http://tempuri.org/IEstoqueService/IncluirProdutoResponse")]
-        System.Threading.Tasks.Task<bool> IncluirProdutoAsync(Cliente1.EstoqueService.Produto Produto);
+        System.Threading.Tasks.Task<bool> IncluirProdutoAsync(Cliente1.ServicoEstoque.Produto Produto);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/RemoverProduto", ReplyAction="http://tempuri.org/IEstoqueService/RemoverProdutoResponse")]
         bool RemoverProduto(string NumeroProduto);
@@ -147,19 +147,19 @@ namespace Cliente1.EstoqueService {
         System.Threading.Tasks.Task<bool> RemoverEstoqueAsync(string NumeroProduto, int Quantidade);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/VerProduto", ReplyAction="http://tempuri.org/IEstoqueService/VerProdutoResponse")]
-        Cliente1.EstoqueService.Produto VerProduto(string NumeroProduto);
+        Cliente1.ServicoEstoque.Produto VerProduto(string NumeroProduto);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IEstoqueService/VerProduto", ReplyAction="http://tempuri.org/IEstoqueService/VerProdutoResponse")]
-        System.Threading.Tasks.Task<Cliente1.EstoqueService.Produto> VerProdutoAsync(string NumeroProduto);
+        System.Threading.Tasks.Task<Cliente1.ServicoEstoque.Produto> VerProdutoAsync(string NumeroProduto);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IEstoqueServiceChannel : Cliente1.EstoqueService.IEstoqueService, System.ServiceModel.IClientChannel {
+    public interface IEstoqueServiceChannel : Cliente1.ServicoEstoque.IEstoqueService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class EstoqueServiceClient : System.ServiceModel.ClientBase<Cliente1.EstoqueService.IEstoqueService>, Cliente1.EstoqueService.IEstoqueService {
+    public partial class EstoqueServiceClient : System.ServiceModel.ClientBase<Cliente1.ServicoEstoque.IEstoqueService>, Cliente1.ServicoEstoque.IEstoqueService {
         
         public EstoqueServiceClient() {
         }
@@ -188,11 +188,11 @@ namespace Cliente1.EstoqueService {
             return base.Channel.ListarProdutosAsync();
         }
         
-        public bool IncluirProduto(Cliente1.EstoqueService.Produto Produto) {
+        public bool IncluirProduto(Cliente1.ServicoEstoque.Produto Produto) {
             return base.Channel.IncluirProduto(Produto);
         }
         
-        public System.Threading.Tasks.Task<bool> IncluirProdutoAsync(Cliente1.EstoqueService.Produto Produto) {
+        public System.Threading.Tasks.Task<bool> IncluirProdutoAsync(Cliente1.ServicoEstoque.Produto Produto) {
             return base.Channel.IncluirProdutoAsync(Produto);
         }
         
@@ -228,11 +228,11 @@ namespace Cliente1.EstoqueService {
             return base.Channel.RemoverEstoqueAsync(NumeroProduto, Quantidade);
         }
         
-        public Cliente1.EstoqueService.Produto VerProduto(string NumeroProduto) {
+        public Cliente1.ServicoEstoque.Produto VerProduto(string NumeroProduto) {
             return base.Channel.VerProduto(NumeroProduto);
         }
         
-        public System.Threading.Tasks.Task<Cliente1.EstoqueService.Produto> VerProdutoAsync(string NumeroProduto) {
+        public System.Threading.Tasks.Task<Cliente1.ServicoEstoque.Produto> VerProdutoAsync(string NumeroProduto) {
             return base.Channel.VerProdutoAsync(NumeroProduto);
         }
     }
